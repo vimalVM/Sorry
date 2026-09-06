@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Sorry</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Ambient Floating Flowers -->
+    <div class="flower-container flower-1">
+        <svg viewBox="0 0 100 100" class="flower flower-pink">
+            <path d="M50 20 Q60 5 70 20 Q85 30 70 45 Q85 60 70 70 Q60 85 50 70 Q40 85 30 70 Q15 60 30 45 Q15 30 30 20 Q40 5 50 20 Z" fill="currentColor" stroke="#222" stroke-width="1.5" stroke-linejoin="round"/>
+            <circle cx="50" cy="45" r="5" fill="#E8C468" stroke="#222" stroke-width="1.5"/>
+            <path d="M50 70 Q45 85 45 95" stroke="#222" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+        </svg>
+    </div>
+    
+    <div class="flower-container flower-2">
+        <svg viewBox="0 0 100 100" class="flower flower-yellow">
+            <path d="M50 30 Q65 15 80 40 Q75 60 50 60 Q25 60 20 40 Q35 15 50 30 Z" fill="currentColor" stroke="#222" stroke-width="1.5" stroke-linejoin="round"/>
+            <circle cx="50" cy="45" r="4" fill="#E7B5C0" stroke="#222" stroke-width="1.5"/>
+            <path d="M50 60 Q55 80 60 95" stroke="#222" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+        </svg>
+    </div>
+
+    <div class="flower-container flower-3">
+        <svg viewBox="0 0 100 100" class="flower flower-pink">
+             <path d="M50 15 Q70 10 75 35 Q80 60 50 70 Q20 60 25 35 Q30 10 50 15 Z" fill="currentColor" stroke="#222" stroke-width="1.5" stroke-linejoin="round"/>
+             <circle cx="50" cy="40" r="6" fill="#E8C468" stroke="#222" stroke-width="1.5"/>
+             <path d="M50 70 Q48 85 45 98" stroke="#222" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+        </svg>
+    </div>
+
+    <div class="flower-container flower-4">
+        <svg viewBox="0 0 100 100" class="flower flower-yellow">
+            <path d="M50 30 Q65 15 80 40 Q75 60 50 60 Q25 60 20 40 Q35 15 50 30 Z" fill="currentColor" stroke="#222" stroke-width="1.5" stroke-linejoin="round"/>
+            <circle cx="50" cy="45" r="4" fill="#E7B5C0" stroke="#222" stroke-width="1.5"/>
+            <path d="M50 60 Q55 80 60 95" stroke="#222" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+        </svg>
+    </div>
+
+    <div class="flower-container flower-5">
+        <svg viewBox="0 0 100 100" class="flower flower-pink">
+            <path d="M50 20 Q60 5 70 20 Q85 30 70 45 Q85 60 70 70 Q60 85 50 70 Q40 85 30 70 Q15 60 30 45 Q15 30 30 20 Q40 5 50 20 Z" fill="currentColor" stroke="#222" stroke-width="1.5" stroke-linejoin="round"/>
+            <circle cx="50" cy="45" r="5" fill="#E8C468" stroke="#222" stroke-width="1.5"/>
+            <path d="M50 70 Q45 85 45 95" stroke="#222" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+        </svg>
+    </div>
+
+    <div class="flower-container flower-6">
+        <svg viewBox="0 0 100 100" class="flower flower-pink">
+             <path d="M50 15 Q70 10 75 35 Q80 60 50 70 Q20 60 25 35 Q30 10 50 15 Z" fill="currentColor" stroke="#222" stroke-width="1.5" stroke-linejoin="round"/>
+             <circle cx="50" cy="40" r="6" fill="#E8C468" stroke="#222" stroke-width="1.5"/>
+             <path d="M50 70 Q48 85 45 98" stroke="#222" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+        </svg>
+    </div>
+
+    <!-- Main Envelope Scene -->
+    <div class="scene">
+        
+        <!-- Replay Button (hidden initially) -->
+        <button id="replay-btn" class="replay-btn" aria-label="Seal envelope again">
+            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="1 4 1 10 7 10"></polyline>
+                <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path>
+            </svg>
+        </button>
+
+        <!-- The Envelope Wrapper -->
+        <div class="envelope-wrapper" id="envelope-wrapper" role="button" tabindex="0" aria-label="Tap to open the envelope">
+            
+            <div class="envelope">
+                <!-- Back side of envelope (behind card) -->
+                <div class="envelope-back"></div>
+                
+                <!-- The Card -->
+                <div class="card" id="card" role="button" tabindex="0" aria-label="Pull the card out">
+                    <div class="card-content">
+                        <h1 class="headline">Sorry</h1>
+                        <p class="message" style="margin-bottom: 10px;">
+                            Dear Mayura Ma’am,
+                        </p>
+                        <p class="message" style="margin-bottom: 10px; font-size: 1.2rem;">
+                            We are truly sorry. We never meant to hurt or disrespect you in any way. We just want you to know that we truly regret it and are genuinely sorry.
+                        </p>
+                        <p class="message" style="margin-bottom: 10px; font-size: 1.2rem;">
+                            We genuinely appreciate your teaching methods and all the effort you put into teaching us.
+                        </p>
+                        <p class="message" style="margin-bottom: 15px; font-size: 1.2rem;">
+                            Please forgive us. ❤️
+                        </p>
+                        <p class="signature">
+                            With sincere apologies,<br>
+                            Your MCA Students
+                        </p>
+                        
+                        <!-- Mini card decorative flowers -->
+                        <div class="mini-flower mf-1">
+                             <svg viewBox="0 0 50 50">
+                                <circle cx="25" cy="25" r="10" fill="#E8C468" stroke="#222" stroke-width="1"/>
+                                <circle cx="25" cy="25" r="3" fill="#222"/>
+                             </svg>
+                        </div>
+                        <div class="mini-flower mf-2">
+                             <svg viewBox="0 0 50 50">
+                                <path d="M25 10 Q35 0 40 10 Q45 20 25 35 Q5 20 10 10 Q15 0 25 10" fill="#E7B5C0" stroke="#222" stroke-width="1"/>
+                             </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Front side of envelope -->
+                <div class="envelope-front"></div>
+                <div class="envelope-front-right"></div>
+                
+                <!-- Envelope Flap -->
+                <div class="envelope-flap" id="flap"></div>
+            </div>
+            
+            <div class="hint-text" id="hint-text">Tap to open</div>
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
