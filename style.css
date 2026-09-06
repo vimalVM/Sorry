@@ -330,3 +330,13 @@ p.signature {
         opacity: 1;
     }
 }
+
+/* Dynamically spawned flowers on card click */
+.spawned-flower {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 50; /* Above everything */
+}
